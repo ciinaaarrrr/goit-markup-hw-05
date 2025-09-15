@@ -6,6 +6,8 @@ body {
   letter-spacing: 0.48px;
   color: black;
   background-color: #efefef;
+  height: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -45,7 +47,10 @@ a {
 
 p {
   font-family: "roboto", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 button {
@@ -61,6 +66,32 @@ li {
   margin: 0;
 }
 
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+  border: none;
+  width: 310px;
+}
+textarea {
+  outline: none;
+  border: none;
+  border: none;
+  resize: none;
+  font-size: 12px;
+}
+input[type="tel"]:focus {
+  outline: none;
+  border: none;
+  border: none;
+  width: 310px;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border: none;
+  border: none;
+  width: 250px;
+}
 /* NAV HEADER BAŞLANGIC*/
 .menu {
   display: flex;
@@ -157,7 +188,11 @@ li {
 }
 
 .main-button-span {
-  font-weight: 700;
+  font-weight: 500;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
 
 .main-header {
@@ -302,10 +337,10 @@ li {
 }
 .overlay {
   color: white;
-  background-color: blue;
+  background-color: rgba(77, 90, 229, 1);
   position: absolute;
-  top: 0px;
-  left: 0;
+  top: 0;
+  left: 0px;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
@@ -395,7 +430,52 @@ li {
   align-items: baseline;
   gap: 80px;
 }
+.foter-email {
+  background-color: #2e2f42;
+  border: none;
+  color: #fff;
+}
 
+.foter-emailbox {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+}
+
+.subscribe-center {
+  display: flex;
+  justify-content: center;
+}
+.foter-email::placeholder {
+  color: #fff;
+}
+
+.subscribe-button {
+  background-color: rgba(77, 90, 229, 1);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.subscribe-button svg {
+  fill: #fff;
+  width: 24px;
+  height: 20px;
+  display: inline;
+}
+.subscribe-box {
+  margin-left: 30px;
+}
 /* FOOTER BİTİŞ */
 
 /* FUTURSUZCA :D*/
@@ -411,3 +491,168 @@ li {
   margin: 0 auto;
 }
 /* FUTURSUZCA :D*/
+
+/*LOGİN*/
+
+.model {
+  display: none;
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.login-form {
+  position: fixed;
+  width: 408px;
+  height: 584px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 24px 22px;
+}
+
+.close-button svg {
+  display: block;
+  height: 8px;
+  width: 8px;
+}
+
+.close-box button {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 2px solid rgba(189, 185, 185, 0.3);
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgba(231, 233, 252, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:active {
+  background-color: rgba(77, 90, 229, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.close-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-sp {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.sm-t {
+  font-family: "regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(142, 143, 153, 1);
+  margin-top: 20px;
+}
+
+.form-box {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding: 5px;
+}
+.form-box:hover,
+.form-box:focus,
+.comment-box:hover,
+.comment-box:focus {
+  border: 1px solid rgba(77, 90, 229, 1);
+  fill: rgba(77, 90, 229, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.form-top16 {
+  margin-top: 16px;
+}
+.form-top4 {
+  margin-top: 4px;
+}
+.form-top8 {
+  margin-top: 8px;
+}
+
+.form-box svg {
+  width: 14px;
+  margin-left: 10px;
+}
+
+.form-box input {
+  margin-left: 10px;
+  font-family: "regular", sans-serif;
+}
+.comment {
+  width: 350px;
+  height: 100px;
+  margin-top: 0px;
+}
+
+.comment-box {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 360px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  padding: 5px;
+}
+
+.policy-span {
+  font-family: "regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  margin-left: 3px;
+  color: rgba(142, 143, 153, 1);
+}
+
+.a-policy {
+  color: rgba(77, 90, 229, 1);
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+/*-------------------------------*/
+.name-t {
+  border: none;
+}
+
+.form-center {
+  display: flex;
+  align-items: center;
+  max-height: 10px;
+}
+.is-open {
+  display: flex;
+}
+/*--------------------------------*/
