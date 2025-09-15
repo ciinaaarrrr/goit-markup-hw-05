@@ -494,7 +494,7 @@ input[type="email"]:focus {
 
 /*LOGİN*/
 
-.model {
+.modal {
   display: none;
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -573,7 +573,6 @@ input[type="email"]:focus {
   border-radius: 4px;
   display: flex;
   align-items: center;
-  justify-content: baseline;
   padding: 5px;
 }
 .form-box:hover,
@@ -592,12 +591,10 @@ input[type="email"]:focus {
 .form-top4 {
   margin-top: 4px;
 }
-.form-top8 {
-  margin-top: 8px;
-}
 
 .form-box svg {
-  width: 14px;
+  width: 18px;
+  height: 24px;
   margin-left: 10px;
 }
 
@@ -618,7 +615,6 @@ input[type="email"]:focus {
   border-radius: 4px;
   display: flex;
   align-items: center;
-  justify-content: baseline;
   padding: 5px;
 }
 
@@ -641,7 +637,6 @@ input[type="email"]:focus {
   justify-content: center;
   margin-top: 22px;
 }
-
 /*-------------------------------*/
 .name-t {
   border: none;
@@ -650,7 +645,7 @@ input[type="email"]:focus {
 .form-center {
   display: flex;
   align-items: center;
-  max-height: 10px;
+  max-height: 0px;
 }
 .is-open {
   display: flex;

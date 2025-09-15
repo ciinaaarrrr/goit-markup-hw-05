@@ -35,3 +35,10 @@ Our portfolio bölümünde ufak hatalar çıkabilir orayı emin olmadan tamamlam
 
 JuniorKabakistan
 Çınar Kabak
+
+# goit-markup-hw-05
+
+ödev 5 tamamlandı modal clasına is-open eklendiğinde görüntelenicek şekilde hazırlandı
+
+JuniorKabakistan
+Çınar Kabak
